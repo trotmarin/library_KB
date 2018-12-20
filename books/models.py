@@ -23,7 +23,7 @@ class Category(models.Model):
 
 
 class Book(models.Model):
-    title = models.CharField(max_length=300)
+    title = models.CharField(max_length=500)
     slug = models.SlugField(unique=True)
     description = models.TextField(max_length=1000, default="About book")
     image = models.ImageField(
